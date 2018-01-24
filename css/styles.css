@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 
 * {
     margin: 0;
@@ -10,15 +11,23 @@
 
 body {
     margin: 0 auto;
-    padding: 1em;
-    max-width: 1000px;
+    padding: 2em;
 }
 
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.social-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 /* Begin NavBar Styles *******************************************/
 
 
 .navbar {
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 .name {
     float: left;
@@ -96,15 +105,17 @@ body {
 
 .intro {
     position: absolute;
-    bottom: 1em;
-    right: 0;
+    bottom: 3em;
+    right: -1em;
     background-color: white;
     border-radius: 10px;
     padding: 1em;
 }
 
 .intro h1 {
-    font-size: 4.5em;
+    font-size: 4em;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
     text-align: left;
     color: #ff3f34;
 }
@@ -115,6 +126,214 @@ body {
     text-align: left;
 }
 
-.icon {
-    color: #ff3f34;
+/* Begin About Section *******************************************/
+
+.about {
+    background-color: #ededed;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 2em;
 }
+
+.left-div
+{
+    float: left;
+    width: 25em;
+    margin: 2em;
+}
+
+.left-div h1 {
+    text-align: right;
+    font-size: 4em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#name
+{
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 1em;
+    color: #666;
+}
+
+.right-div {
+    float: right;
+    border: 3px solid #000;
+    width: 40em;
+    background-color: white;
+}
+
+.right-div p {
+    text-align: left;
+    font-size: 1.5em;
+    margin: 2em;
+}
+
+/* Begin Experience Section *******************************************/
+
+.experience
+{
+    margin: 0 auto;
+	padding: 2em;
+    display: table;
+}
+.exp-title
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    padding: .5em;
+    color: #000;
+    border-bottom: 1px solid #CCC;
+}
+
+.experience-grid
+{
+    list-style-type: none;
+    margin: 2em auto;    
+}
+
+.job
+{
+    display: inline-block;
+    width: 30em;
+    float: left;
+    position: relative;
+}
+
+#regions-logo
+{
+    width: 20em;
+    margin: .25em;
+}
+
+#finlogo
+{
+    width: 20em;
+    margin: .25em;
+}
+
+.position
+{
+    text-align: center;
+    font-size: 1em;
+    padding: .5em 1em;
+}
+
+.description
+{
+    list-style-type: none;
+}
+
+.description p
+{
+    text-align: left;
+    margin: 1em;
+}
+
+/* Begin Social Media Section *******************************************/
+
+
+.social {
+	padding: 3em;
+	}
+.social-list {
+	list-style-type: none;
+}
+
+.social-list li {
+	display: inline-block;
+	margin: 1em;
+}
+
+/* Begin Contact Me Section *******************************************/
+
+.lets-talk h1 {
+	float: left;
+	font-size: 4.5em;
+	font-family:  'Montserrat', sans-serif;
+	padding-bottom: 1em;
+}
+
+.lets-talk h3 {
+	float: right;
+	color: #ccc;
+	text-align: right;
+}
+
+form {
+	clear: both;
+	display: block;
+	max-width: 700px;
+	margin: 0 auto;
+	margin-bottom: 4em;
+	padding-bottom: 4em;
+	
+}
+	
+::placeholder {
+	font-size: 1.25em;
+	font-style: italic;
+	color: #ccc;
+	text-indent: 1em;
+}
+
+.name-input, .email-input{
+	width: 100%;
+	background-color: #ededed;
+	border: none;
+	margin-top: 1em;
+	height: 50px;
+	text-align: left;
+	text-indent: 1em;
+	font-size: 1.25em;
+	color: #666;
+}
+
+.message-input {
+	width: 100%;
+	background-color: #ededed;
+	border: none;
+	text-indent: 1em;
+	padding-top: .5em;
+	margin-top: 1em;
+	height: 200px;
+	text-align: left;
+	font-size: 1.25em;
+	color: #666;
+}
+
+
+#submit {
+	float: right;
+	padding: 20px 50px;
+	
+	margin-top: 1em;
+	border: none;
+	background-color: #ff3f34;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+#submit:hover {
+	background-color: black;
+	}
+
+/* Begin Footer Section *******************************************/
+
+.footer {
+	border-top: 3px solid black;
+	padding: 3em 0;
+	margin: 0 auto;
+	clear: both;
+}
+	
+.footer h3 {
+	text-transform: uppercase;
+}
+
