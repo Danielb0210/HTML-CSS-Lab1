@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #1e272e;
+}
+
+body {
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 1000px;
+}
+
+/* Begin NavBar Styles *******************************************/
+
+
+.navbar {
+    font-size: 1.5em;
+}
+.name {
+    float: left;
+    vertical-align: middle;
+    font-weight: bold;
+    
+    margin-bottom: 2em;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #1e272e;
+}
+
+.name li {
+    list-style-type: none;
+    padding: 15px 25px;    
+    transition: 0.3s linear;
+    border: 2px solid #1e272e;
+}
+
+.nav {
+    float: right;
+}
+
+.nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 15px 15px;
+    position: relative;
+}
+
+/* Hover effects for Navigation */
+
+.name li:hover {
+    background-color: #ff3f34;
+    color: white;
+    border-color: #ff3f34;
+}
+
+.nav li:after {
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ff3f34;
+    transition: width .5s ease;
+    -webkit-transition: width .5s ease;
+}
+
+.nav li:hover:after {
+    width: 100%;
+    left: 0;
+    background: #ff3f34;
+}
+
+/* Begin JumboTron *******************************************/
+
+.jumbotron {
+    clear: both;
+    position: relative;
+    height: 600px;
+}
+
+.jumbotron img {
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 25em;
+    border-radius: 50%;
+}
+
+.intro {
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.intro h1 {
+    font-size: 4.5em;
+    text-align: left;
+    color: #ff3f34;
+}
+
+.intro h3 {
+    text-transform: uppercase;
+    margin-top: .5em;
+    text-align: left;
+}
+
+.icon {
+    color: #ff3f34;
+}
